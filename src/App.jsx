@@ -40,7 +40,6 @@ function App() {
                 }
         }, [])
 
-        // ✅ Create debounced function only once
         const debouncedFetch = useMemo(
                 () => debounce(fetchProducts, 2000),
         [fetchProducts])
